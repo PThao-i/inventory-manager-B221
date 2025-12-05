@@ -22,4 +22,18 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
+def add_song():
+    title = input("Tên bài hát: ")
+    artist = input("Tên ca sĩ: ")
+    duration = int(input("Thời lượng (giây): "))
+
+    song = {
+        'title': title,
+        'artist': artist,
+        'duration': duration
+    }
+
+    songs.append(song)
+    print("✔️ Đã thêm bài hát vào playlist.")
+
