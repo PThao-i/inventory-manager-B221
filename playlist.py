@@ -37,3 +37,12 @@ def add_song():
     songs.append(song)
     print("✔️ Đã thêm bài hát vào playlist.")
 
+def view_playlist():
+    if not songs:
+        print("Playlist đang trống.")
+        return
+
+    print("\n--- DANH SÁCH PHÁT ---")
+    for i, s in enumerate(songs, start=1):
+        print(f"{i}. {s['title']} - {s['artist']} ({s['duration']}s)")
+
